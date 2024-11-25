@@ -1,6 +1,6 @@
-import { createClient } from "@/src/lib/supabase/server";
-import { InfoIcon } from "lucide-react";
-import { redirect } from "next/navigation";
+import { createClient } from '@/src/lib/supabase/server';
+import { InfoIcon } from 'lucide-react';
+import { redirect } from 'next/navigation';
 
 export default async function ProtectedPage() {
   const supabase = await createClient();
@@ -10,7 +10,7 @@ export default async function ProtectedPage() {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    return redirect("/sign-in");
+    return redirect('/sign-in');
   }
 
   return (

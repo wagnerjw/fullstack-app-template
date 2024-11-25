@@ -1,8 +1,8 @@
-import Link from "next/link";
-import FastAPILogo from "../fastapi-logo";
-import NextLogo from "../next-logo";
-import SupabaseLogo from "../supabase-logo";
-import { Button } from "../ui/button";
+import Link from 'next/link';
+import FastAPILogo from '../fastapi-logo';
+import NextLogo from '../next-logo';
+import SupabaseLogo from '../supabase-logo';
+import { Button } from '../ui/button';
 
 export default function Header() {
   return (
@@ -23,15 +23,15 @@ export default function Header() {
         <span className="border-10 rotate-45 h-6" />
         <div className="flex items-center justify-between font-semibold">
           <a
-          href="https://fastapi.tiangolo.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FastAPILogo />
-        </a>
-        <Link href="https://fastapi.tiangolo.com/">
-          <p className="text-lg">FastAPI</p>
-        </Link>
+            href="https://fastapi.tiangolo.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FastAPILogo />
+          </a>
+          <Link href="https://fastapi.tiangolo.com/">
+            <p className="text-lg">FastAPI</p>
+          </Link>
         </div>
       </div>
       <p className="text-black">starter template</p>

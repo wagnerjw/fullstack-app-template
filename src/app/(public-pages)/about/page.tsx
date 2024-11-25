@@ -1,5 +1,4 @@
-import Hero from "@/src/components/prebuilt/hero";
-
+import Hero from '@/src/components/prebuilt/hero';
 
 export default async function Index() {
   return (
