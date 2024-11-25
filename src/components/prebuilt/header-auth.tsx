@@ -1,9 +1,9 @@
-import { signOutAction } from '@/src/lib/actions';
+import { signOutAction } from '@/src/app/actions';
 import { hasEnvVars } from '@/src/lib/supabase/check-env-vars';
+import { createClient } from '@/src/lib/supabase/server';
 import Link from 'next/link';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
-import { createClient } from '@/src/lib/supabase/server';
 
 export default async function AuthButton() {
   const supabase = await createClient();
